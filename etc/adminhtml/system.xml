@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="twofactorauth">
+            <tab>security</tab>
+            <resource>Magento_TwoFactorAuth::config</resource>
+			<group id="general">
+				<field id="enabled" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="0" translate="label" type="select">
+					<label>Enabled</label>
+					<comment>Enables/Disables Two-factor authorization</comment>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

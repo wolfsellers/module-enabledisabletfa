@@ -1,0 +1,26 @@
+{
+    "name": "wolfsellers/module-enabledisabletfa",
+    "description": "Adds enable disable switch for the Two-factor Authorization",
+    "type": "magento2-module",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Rus0",
+            "email": "andonid88@gmail.com",
+            "homepage": "https://wolfsellers.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "magento/module-two-factor-auth": "^1.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "WolfSellers\\EnableDisableTfa\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
