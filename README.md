@@ -6,6 +6,7 @@
     
 
 ## Main Functionalities
+
 Adds enable disable feature switch for the Two-factor Authorization for Magento 2.4 
 
 It can be configured in `Stores > Configuration > 2FA > General > Enabled` by default is set to no, so the admin can be used.
@@ -34,3 +35,9 @@ Tested in Magento 2.4.0, versions:
  - Community
  - Enterprise
  - Cloud 
+
+## Toggling through CLI
+
+```sh
+php bin/magento config:set twofactorauth/general/enabled 1 # or 0
+```
